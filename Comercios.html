@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Comercios abiertos Domingo 9 de Junio</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 20px;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .header-title {
+            font-family: 'Playfair Display', serif;
+            text-align: left;
+            color: #1C325B;
+            margin-bottom: auto;
+        }
+
+
+        .comercios-abiertos {
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 32px;
+            position: relative;
+        }
+
+        .comercios-abiertos::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #C99D66;
+            bottom: 0px;
+            left: 0%;
+        }
+        
+
+        .fecha {
+            font-weight: normal;
+            font-size: 24px;
+            margin-top: auto;
+            margin-bottom: 10px;
+        }
+
+        .rubro-group {
+            margin-bottom: 20px;
+            border: 2px solid #C99D66;
+            padding: 15px;
+        }
+
+        .rubro-title {
+            color: #1C325B;
+            font-family: 'Playfair Display';
+            font-weight: 900;
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        .comercios-grid {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .comercio-card {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 16px;
+            width: calc(33.333% - 20px);
+            position: relative;
+        }
+
+        .comercio-card h4 {
+
+            margin-top: 0;
+            font-size: 20px;
+            position: relative;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comercio-card h4::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background-color: #C99D66;
+            bottom: 0;
+            left: 25%;
+        }
+
+        .comercio-card p {
+            margin: 8px 0;
+        }
+
+        .maps-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 16px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #1C325B;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .maps-button:hover {
+            background-color: #294881;
+        }
+
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+        }
+
+        .logo {
+            margin-top: auto;
+            width: 8em; /* Cambia el ancho del logo */
+            height: auto; /* Esto mantiene la proporción original */
+        }
+
+        @media (max-width: 650px) {
+            .comercio-card {
+                width: calc(50% - 20px);
+                /* 2 items per row */
+            }
+        }
+
+        @media (max-width: 512px) {
+            .comercio-card {
+                width: calc(100% - 20px);
+                /* 1 item per row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .maps-button {
+                font-size: 20px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-container">
+        <div class="header-content">
+            <h1 class="header-title comercios-abiertos">Comercios abiertos</h1>
+            <img src="https://www.zapala.gob.ar/wp-content/uploads/2022/05/Logo-Pagina-1.png" alt="Logo" class="logo">
+        </div>
+        <h2 class="header-title fecha">Domingo 9 de Junio</h2>
+    </div>
+
+
+
+    <div class="rubro-group">
+        <h3 class="rubro-title">Alojamientos</h3>
+        <div class="comercios-grid">
+
+            <div class="comercio-card">
+                <h4>La Posta del Sur</h4>
+                <p><strong>Dirección:</strong> Pulmari 1336</p>
+                <p><strong>Horario:</strong> 08:00 a 24:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942533192">2942533192</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Pulmari+1336/data=!4m2!3m1!19sChIJ_eio_Vd1DZYRH0t_Eil2gXw"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Círculo Policial</h4>
+                <p><strong>Dirección:</strong> Mayor Torres 360</p>
+                <p><strong>Horario:</strong> 24 horas</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942401323">2942401323</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Mayor+Torres+360/data=!4m2!3m1!19sChIJHeBvwOWfDZYRmKESbTOlya0"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rubro-group">
+        <h3 class="rubro-title">Gastronómicos</h3>
+        <div class="comercios-grid">
+
+            <div class="comercio-card">
+                <h4>Baratillo Casa de Té</h4>
+                <p><strong>Dirección:</strong> Candelaria 860</p>
+                <p><strong>Horario:</strong> 09:00 a 13:00 - 16:30 a 20:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942570408">2942570408</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Teniente+Candelaria+860/data=!4m2!3m1!19sChIJy_imcfGfDZYRaSqwmwwknks"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Vittorio Café e Gelatto</h4>
+                <p><strong>Dirección:</strong> Roca 475</p>
+                <p><strong>Horario:</strong> 11:00 a 13:30 - 17:00 a 21:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2214762022">2214762022</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/oS6ms8HXeH5y9nDa7" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Saveur Casita de Hebras</h4>
+                <p><strong>Dirección:</strong> Avellaneda 263</p>
+                <p><strong>Horario:</strong> 17:00 a 21:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942460230">2942460230</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/FfjbcEssPVjcaqrA7" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Restaurant Las Familias</h4>
+                <p><strong>Dirección:</strong> Ejército Argentino 460</p>
+                <p><strong>Horario:</strong> 11:00 a 15:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942421895">2942421895</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Ejercito+Argentino+460/data=!4m2!3m1!19sChIJDT5F0-ifDZYRTjizaHjK744"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Bodegón Cu4tro</h4>
+                <p><strong>Dirección:</strong> Belgrano 966</p>
+                <p><strong>Horario:</strong> 11:30 a 14:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942692527">2942692527</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/TLhRYfT8XkpQhmGZ8" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Catalina</h4>
+                <p><strong>Dirección:</strong> Houssay 326</p>
+                <p><strong>Horario:</strong> 11:00 a 15:00 - 20:30 en adelante</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2995526464">2995526464</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/8KC9ALj1UDoyNUGm6" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Restaurante Bodegón Cuatro</h4>
+                <p><strong>Dirección:</strong> Belgrano y Elías Sapag</p>
+                <p><strong>Horario:</strong> 11:30 a 14:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942692527">2942692527</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/hnYfwGHRJMRqERr9A" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Lado Viejo</h4>
+                <p><strong>Dirección:</strong> Av. San Martín y Roca</p>
+                <p><strong>Horario:</strong> 10:30 a 16:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942542213">2942542213</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/vuMwZ2k2snQnepa6A" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Cubata Cocina</h4>
+                <p><strong>Dirección:</strong> Italia 87</p>
+                <p><strong>Horario:</strong> 08:00 a 16:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942528685">2942528685</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/GcYFvE2hHF5Q9c4T9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Caffé Resto 75</h4>
+                <p><strong>Dirección:</strong> Luis Monti 190 frente al Hospital</p>
+                <p><strong>Horario:</strong> 09:00 a 19:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942628023">2942628023</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/6jSpuC2H4cNCzJcH7" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Rotisería Los Hermanos</h4>
+                <p><strong>Dirección:</strong> Av. 12 de Julio 721</p>
+                <p><strong>Horario:</strong> 11:00 a 15:00 - 20:00 a 23:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942460279">2942460279</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/s9HpMqqxveo9X9uKA" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Rotisería 100Fuegos (Clásicos de Cocina de Estación)</h4>
+                <p><strong>Dirección:</strong> El Huecú 734</p>
+                <p><strong>Horario:</strong> 11:00 a 14:30 - 20:00 a 23:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942369142">2942369142</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/xaEt5Dg6KEiGreF66" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>La Marchanta</h4>
+                <p><strong>Dirección:</strong> Olascoaga 356</p>
+                <p><strong>Horario:</strong> 12:30 a 15:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942460675">2942460675</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/XbUhu6nPjzDtvDum9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Carripollo</h4>
+                <p><strong>Dirección:</strong> 9 de Julio 556</p>
+                <p><strong>Horario:</strong> 10:00 a 15:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942569447">2942569447</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/agmXstfLV8jggHac9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Rotisería Los Hermanos</h4>
+                <p><strong>Dirección:</strong> 12 de Julio 745</p>
+                <p><strong>Horario:</strong> 11:00 a 15:00 - 20:00 a 23:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942460279">2942460279</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/7WfvmCGS7UqZG8959" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Rotisería "Abuela Flor"</h4>
+                <p><strong>Dirección:</strong> Zingoni y Sargento Cabral</p>
+                <p><strong>Horario:</strong> 12:00 a 15:00 - 20:00 a 24:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942515800">2942515800</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/sQVqyFPxxtqqnGAb9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Sabores Mana</h4>
+                <p><strong>Dirección:</strong> Colón y Bagnagatti</p>
+                <p><strong>Horario:</strong> 11:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942693465 / 2942674541">2942693465 / 2942674541</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/TU9afHzaNmT3XwqW6" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Rotisería Punta Mitre</h4>
+                <p><strong>Dirección:</strong> Mitre y Trannack</p>
+                <p><strong>Horario:</strong> 10:30 a 15:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942423094 / 2942544049">2942423094 / 2942544049</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/bFmBxqan9CfHhsvh8" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Rotisería Al Paso</h4>
+                <p><strong>Dirección:</strong> Trannack 1973</p>
+                <p><strong>Horario:</strong> 10:00 a 14:00 - 20:00 a 00:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942400001">2942400001</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/bgJe6xHaSDZB3jZm7" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Sandwichería El 32</h4>
+                <p><strong>Dirección:</strong> Etcheluz 323</p>
+                <p><strong>Horario:</strong> 18:00 a 21:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942646484">2942646484</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/MAsriQduoDFadnp47" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rubro-group">
+        <h3 class="rubro-title">Mercados, Almacenes y Kioscos</h3>
+        <div class="comercios-grid">
+
+            <div class="comercio-card">
+                <h4>Kiosco Delpi</h4>
+                <p><strong>Dirección:</strong> Roca 804</p>
+                <p><strong>Horario:</strong> 11:00 a 21:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2644143798">2644143798</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/9d3aiY6i6Febrs529" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Superkiosko Valentino</h4>
+                <p><strong>Dirección:</strong> San Juan 61</p>
+                <p><strong>Horario:</strong> 10:00 a 14:00 - 17:00 a 22:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942343232">2942343232</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/San+Juan+61/data=!4m2!3m1!19sChIJE9-wo2Z1DZYR34jAJsNlBqU"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>La Dulcería de Zapala</h4>
+                <p><strong>Dirección:</strong> Roca 555</p>
+                <p><strong>Horario:</strong> 10:00 a 13:00 - 17:00 a 20:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942506503">2942506503</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/3cP7TZuPVCfLQCzm8" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Parada 25</h4>
+                <p><strong>Dirección:</strong> Avenida del Maestro y Santo Domingo</p>
+                <p><strong>Horario:</strong> 09:00 a 23:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942400391">2942400391</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/zo7CW2omiUcydvfHA" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Mercadito Audal</h4>
+                <p><strong>Dirección:</strong> Chos Malal y Santo Domingo</p>
+                <p><strong>Horario:</strong> 09:30 a 23:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942447597">2942447597</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/bBTpgnrP6BeSU5n66" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Mercadito El Alba</h4>
+                <p><strong>Dirección:</strong> Santiago del Estero 644</p>
+                <p><strong>Horario:</strong> 09:30 a 22:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942465518">2942465518</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Santiago+del+Estero+644/data=!4m2!3m1!19sChIJ59accV11DZYRxsYwbzP8pBo"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>La Vasquita</h4>
+                <p><strong>Dirección:</strong> Cristóbal Colón 576</p>
+                <p><strong>Horario:</strong> 09:30 a 13:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942668878">2942668878</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Crist%C3%B3bal+Col%C3%B3n+576/data=!4m2!3m1!19sChIJu4wjgFh1DZYRhINzIiFXc0A"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>El Viejo Malú</h4>
+                <p><strong>Dirección:</strong> Laguna Blanca 384</p>
+                <p><strong>Horario:</strong> 10:00 a 16:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942504445">2942504445</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/hcL7YHk8mqYf4GwPA" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Mercado Los Peñi</h4>
+                <p><strong>Dirección:</strong> Quillén y Catan Lil</p>
+                <p><strong>Horario:</strong> 10:30 a 00:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942657489">2942657489</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/psxGNEnEkRZa4gYL9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Lo de Gra</h4>
+                <p><strong>Dirección:</strong> Chachil y Villegas</p>
+                <p><strong>Horario:</strong> 09:00 a 22:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942643131">2942643131</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/9y7VWEgEscMLXmo49" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Los Dos Hermanos</h4>
+                <p><strong>Dirección:</strong> Ejército Argentino y José Paso</p>
+                <p><strong>Horario:</strong> 10:00 a 23:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942461984">2942461984</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/nL6RW3rzvnQmKRP16" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Autoservicios El Veci</h4>
+                <p><strong>Dirección:</strong> Colón 1259</p>
+                <p><strong>Horario:</strong> 09:00 a 15:00 - 18:00 a 23:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942449242">2942449242</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/QSX5kU2qxnEdYmvY8" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>El Zapa</h4>
+                <p><strong>Dirección:</strong> Corrientes y 12 de Julio</p>
+                <p><strong>Horario:</strong> 10:00 a 22:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942477773">2942477773</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/hm7tUgykUY2omNVQ7" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Tutifruti 2</h4>
+                <p><strong>Dirección:</strong> Torres Nilson y Fader Fernando</p>
+                <p><strong>Horario:</strong> 10:00 a 14:00 - 17:00 a 23:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942681099">2942681099</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/dNJpNognsCjWRXgy9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Cava de Vientos</h4>
+                <p><strong>Dirección:</strong> Juan José Paso 270</p>
+                <p><strong>Horario:</strong> 11:00 a 15:00 y 17:00 a 23:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942458431">2942458431</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Juan+Jos%C3%A9+Paso+270/data=!4m2!3m1!19sChIJH9vCW-ifDZYR3O0twOh9xFA"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Depósito Yani (Frutas y Verduras)</h4>
+                <p><strong>Dirección:</strong> Alumine 657</p>
+                <p><strong>Horario:</strong> 09:00 a 15:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942580936">2942580936</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/ckbZGE3Z8z76jM4U6" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Cakos 53</h4>
+                <p><strong>Dirección:</strong> Av. 12 de Julio 470</p>
+                <p><strong>Horario:</strong> 18:00 a 23:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942449155">2942449155</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/tCqmVwJ1rH6L5PQM9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Mercado Sarai</h4>
+                <p><strong>Dirección:</strong> Treppo y Río Negro</p>
+                <p><strong>Horario:</strong> 10:00 a 23:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942672080">2942672080</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/4Y2tqHqJ1t3cSoeMA" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Mercado Amancay</h4>
+                <p><strong>Dirección:</strong> Cutral Co y Amancay</p>
+                <p><strong>Horario:</strong> 10:30 a 14:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942410128">2942410128</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/KGWyNtJEgsVfsCan9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>La Esquina de la Economía</h4>
+                <p><strong>Dirección:</strong> Lonco Luan y Traful</p>
+                <p><strong>Horario:</strong> 10:00 a 15:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942300495">2942300495</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/Voasdg1tDNgvJtNP9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Almacén Barros</h4>
+                <p><strong>Dirección:</strong> La Pampa 1552</p>
+                <p><strong>Horario:</strong> 11:00 a 23:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942659498">2942659498</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/F3jYLAF9GyLA5qo37" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Multiventas Cuqui</h4>
+                <p><strong>Dirección:</strong> Bartolomé Mitre 425</p>
+                <p><strong>Horario:</strong> 10:00 a 23:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942475838">2942475838</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/QBDati3gCdFtUidv9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Sabrostar</h4>
+                <p><strong>Dirección:</strong> Laguna Blanca y Copahue</p>
+                <p><strong>Horario:</strong> 10:00 a 14:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942570468">2942570468</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/eneHPfAbP5M6X9YLA" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Frendi</h4>
+                <p><strong>Dirección:</strong> 12 de Julio 274</p>
+                <p><strong>Horario:</strong> 10:00 a 13:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942674608">2942674608</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Avenida+12+de+Julio+274/data=!4m2!3m1!19sChIJvZXCqOCfDZYRoQ71TTmIjqA"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Servicompras Ruta 40</h4>
+                <p><strong>Dirección:</strong> Sócrates 316</p>
+                <p><strong>Horario:</strong> 24 horas</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942487656">2942487656</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/S%C3%B3crates+316/data=!4m2!3m1!19sChIJx6_5A9yfDZYRbHMTS8aPB4g"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Lo del Mono</h4>
+                <p><strong>Dirección:</strong> 25 de Mayo 2231</p>
+                <p><strong>Horario:</strong> 09:30 a 14:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942599588">2942599588</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/25+de+Mayo+2231/data=!4m2!3m1!19sChIJh4CY7gOgDZYRLTsISb1-644"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rubro-group">
+        <h3 class="rubro-title">Panaderías</h3>
+        <div class="comercios-grid">
+
+            <div class="comercio-card">
+                <h4>Chipa Correntino - Congelados</h4>
+                <p><strong>Dirección:</strong> Ejército Argentino</p>
+                <p><strong>Horario:</strong> 08:00 a 20:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:3774411956">3774411956</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/8R7UXBwnC4N5LngYA" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Panadería Houssay</h4>
+                <p><strong>Dirección:</strong> Houssay y España 800</p>
+                <p><strong>Horario:</strong> 08:00 a 20:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942674072">2942674072</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/DKwemuTWsD3xujdy9" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Panadería y Cafetería Mitre</h4>
+                <p><strong>Dirección:</strong> Mitre 272</p>
+                <p><strong>Horario:</strong> 08:00 a 14:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942442903">2942442903</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/o2q9uTfZNDWu45zKA" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Despensa Zapala</h4>
+                <p><strong>Dirección:</strong> Parque del Bicentenario (entre Plaza Blanda y Patinódromo)</p>
+                <p><strong>Horario:</strong> 10:00 a 19:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942658491">2942658491</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/B4AQf6KZo8LBiG5r6" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>La Granja</h4>
+                <p><strong>Dirección:</strong> Avellaneda 2238</p>
+                <p><strong>Horario:</strong> 10:00 a 14:00 - 19:00 a 22:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942506426">2942506426</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Avenida+Avellaneda+2238/data=!4m2!3m1!19sChIJzRyQlgSgDZYRWzdsQxtunjY"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rubro-group">
+        <h3 class="rubro-title">Recuerdos, Souvenires</h3>
+        <div class="comercios-grid">
+
+            <div class="comercio-card">
+                <h4>Bellas Piñatas</h4>
+                <p><strong>Dirección:</strong> Santiago del Estero 522</p>
+                <p><strong>Horario:</strong> 08:00 a 18:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2994691832">2994691832</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Santiago+del+Estero+522/data=!4m2!3m1!19sChIJ9TEwZV11DZYRYzUHJJER9D8"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Bella Esther Design</h4>
+                <p><strong>Dirección:</strong> Paraguay 25 Local 2</p>
+                <p><strong>Horario:</strong> 10:00 a 15:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942504566">2942504566</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Paraguay+25/data=!4m2!3m1!19sChIJ144IeOSfDZYRTddwxydh3XI"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Crisol Arte Holístico</h4>
+                <p><strong>Dirección:</strong> Av. del Maestro</p>
+                <p><strong>Horario:</strong> 10:00 a 22:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942474470">2942474470</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/tE2cpFzGhVMbdHA96" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>SubliMar</h4>
+                <p><strong>Dirección:</strong> Chocón 1141</p>
+                <p><strong>Horario:</strong> 08:00 a 15:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942353019">2942353019</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/XMXgfX9EX2QHzmyz8" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rubro-group">
+        <h3 class="rubro-title">Servicios Automotrices, Gomerías</h3>
+        <div class="comercios-grid">
+
+            <div class="comercio-card">
+                <h4>Gomería El Gordo</h4>
+                <p><strong>Dirección:</strong> Libertad 2024</p>
+                <p><strong>Horario:</strong> 08:00 a 22:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942690632">2942690632</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Libertad+2024/data=!4m2!3m1!19sChIJ51V9zZwxCpYRBLJWW3qyj28"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>AutoScan Electrónica Automotriz</h4>
+                <p><strong>Dirección:</strong> Ibarrolaza 587</p>
+                <p><strong>Horario:</strong> 10:00 a 17:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942618342">2942618342</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Hector+Ibarrolaza+587/data=!4m2!3m1!19sChIJG9IyOl91DZYR3AqR4aFqt7E"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Taller de Electricidad del Automotor "Carlitos"</h4>
+                <p><strong>Dirección:</strong> Santiago del Estero 958</p>
+                <p><strong>Horario:</strong> 09:00 a 20:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942504272">2942504272</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/H7gV68sjCGCaPaz46" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rubro-group">
+        <h3 class="rubro-title">Transporte</h3>
+        <div class="comercios-grid">
+
+            <div class="comercio-card">
+                <h4>Chevallier/Flechabus</h4>
+                <p><strong>Dirección:</strong> Uriburu y Etcheluz</p>
+                <p><strong>Horario:</strong> 09:00 a 16:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942409417">2942409417</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/jKReRf4pGLsCdijN7" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Cooperativa de Radiotaxi La Unión</h4>
+                <p><strong>Dirección:</strong> 25 de Mayo 2013</p>
+                <p><strong>Horario:</strong> 24 horas</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942525039">2942525039</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/RvSsifXsLaWhEHAp8" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Radio Taxi Lihuen</h4>
+                <p><strong>Dirección:</strong> Martin Etcheluz 57</p>
+                <p><strong>Horario:</strong> 24 horas</p>
+                <p><strong>Teléfono:</strong> <a href="tel:430300 / 2942579090">430300 / 2942579090</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/jRMbBrQGPwa7jRHg6" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rubro-group">
+        <h3 class="rubro-title">Varios</h3>
+        <div class="comercios-grid">
+
+            <div class="comercio-card">
+                <h4>Farmacia El Maitén</h4>
+                <p><strong>Dirección:</strong> Ejército Argentino 229</p>
+                <p><strong>Horario:</strong> 8:30 hs a 8:30 hs del lunes</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942421761">2942421761</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/Ejercito+Argentino+229/data=!4m2!3m1!19sChIJ4RzoGpSETpQRzZBv8faG6ZY"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Showroom Nancy Zapala</h4>
+                <p><strong>Dirección:</strong> Luis Piedra Buena 521</p>
+                <p><strong>Horario:</strong> 09:30 a 13:30</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942600350">2942600350</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/MKUybgEni9kTq3ky8" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Librería 9 de Julio</h4>
+                <p><strong>Dirección:</strong> 9 de Julio 140</p>
+                <p><strong>Horario:</strong> 10:00 a 12:00 - 18:00 a 20:00</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942641874">2942641874</a></p>
+                <a class="maps-button"
+                    href="https://www.google.com/maps/place/9+de+Julio+140/data=!4m2!3m1!19sChIJPaP41_yfDZYRNVCPlBX_Q4U"
+                    target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+            <div class="comercio-card">
+                <h4>Asociación de Fomento "El Salitral"</h4>
+                <p><strong>Dirección:</strong> Chacra 15 Calle Dominga Pino</p>
+                <p><strong>Horario:</strong> Disponible todo el día</p>
+                <p><strong>Teléfono:</strong> <a href="tel:2942460161">2942460161</a></p>
+                <a class="maps-button" href="https://maps.app.goo.gl/QQTD8NuJgm4Dy4948" target="_blank"><span class="material-symbols-outlined"> location_on </span> Ver Mapa</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
